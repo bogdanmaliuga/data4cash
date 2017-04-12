@@ -9,6 +9,7 @@ jQuery(document).ready(function($) {
     owl.owlCarousel({
         loop: true,
         margin: 33,
+        mouseDrag:false,
         responsive: {
             0: {
                 items: 1,
