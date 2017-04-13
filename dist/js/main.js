@@ -33,6 +33,12 @@ jQuery(document).ready(function($) {
 
 
     });
+    $('.clickToOver').click(function(event) {
+        
+         $('html, body').animate({
+        scrollTop: $(".profile-tabs").offset().top-$('.navbar').height()-5
+    }, 2000)
+    });
     var owl = $('#owl1');
     owl.owlCarousel({
         loop: true,
@@ -67,10 +73,10 @@ jQuery(document).ready(function($) {
         mouseDrag: false,
         responsive: {
             0: {
-                items: 1,
+               items: 1,
                 pagination: false,
-                margin: 12,
-                stagePadding: 25
+                margin: 27,
+                stagePadding: 54
             },
             540: {
                 items: 2,
@@ -96,8 +102,8 @@ jQuery(document).ready(function($) {
             0: {
                 items: 1,
                 pagination: false,
-                margin: 12,
-                stagePadding: 25
+                margin: 27,
+                stagePadding: 54
             },
             540: {
                 items: 2,
@@ -121,10 +127,10 @@ jQuery(document).ready(function($) {
         mouseDrag: false,
         responsive: {
             0: {
-                items: 1,
+               items: 1,
                 pagination: false,
-                margin: 12,
-                stagePadding: 25
+                margin: 27,
+                stagePadding: 54
             },
             540: {
                 items: 2,

@@ -7,6 +7,9 @@ body {
 .owl-dots {
   display: none; }
 
+.owl-carousel .owl-item {
+  padding-bottom: 1px; }
+
 .select {
   position: relative;
   display: inline-block;
@@ -179,7 +182,8 @@ body {
         font-weight: 400;
         line-height: 32px; }
         .navbar ul.nav li.my-account ul.dropdown-menu li a:hover {
-          background-color: #fff; }
+          background-color: #fff;
+          text-decoration: underline; }
   .navbar ul.nav li.dropdown.inloggen.open > a {
     background-color: #2e91b7; }
   .navbar ul.nav li.dropdown.inloggen {
@@ -639,6 +643,8 @@ main .profile-block {
       font-weight: 400;
       text-decoration: underline;
       line-height: 32px; }
+      main .profile-block .right-block .user-descr a:hover {
+        text-decoration: none; }
   main .profile-block .right-block .user-detail {
     float: left;
     width: 27%;
@@ -697,7 +703,7 @@ main .profile-block {
         main .profile-block .right-block .profile-buttons ul li a {
           text-align: left;
           display: inline-block;
-          padding: 12px 29.73px; }
+          padding: 11px 29.73px; }
           main .profile-block .right-block .profile-buttons ul li a span.icon {
             float: left;
             display: inline-block;
@@ -722,6 +728,10 @@ main .profile-block {
             font-weight: 400; }
           main .profile-block .right-block .profile-buttons ul li a:hover {
             background-image: linear-gradient(180deg, #ffffff 0%, #f3f8fc 100%); }
+        main .profile-block .right-block .profile-buttons ul li:first-child {
+          border-left: none; }
+        main .profile-block .right-block .profile-buttons ul li:last-child a {
+          padding-right: 39.5px; }
   main .profile-block .right-block .padding-null-xs {
     padding: 0 !important; }
   main .profile-block .right-block .left-block-inside {
@@ -913,6 +923,9 @@ main .profile-block {
         margin: 0; }
         main .profile-block .right-block .profile-tabs .tabs-item h3 .fa {
           line-height: 75px; }
+      main .profile-block .right-block .profile-tabs .tabs-item img {
+        max-width: 200px;
+        margin-bottom: 20px; }
       main .profile-block .right-block .profile-tabs .tabs-item .tabs-detail {
         display: none;
         padding-left: 30px;
@@ -1127,6 +1140,8 @@ main .dates-block {
     border: 1px solid #eaeaea;
     background-color: #ffffff;
     overflow: hidden; }
+    main .dates-block .owl-carousel .date-item .img-container {
+      overflow: hidden; }
     main .dates-block .owl-carousel .date-item img {
       width: 100%;
       -webkit-transition: -webkit-transform 0.5s ease;
@@ -1388,6 +1403,8 @@ footer {
         padding-left: 26px; }
     .navbar ul.nav li.dropdown.inloggen.open > a {
       background-color: #fff; }
+    .navbar ul.nav li.sub {
+      padding-left: 0; }
     .navbar ul.nav li.dropdown.inloggen {
       padding-bottom: 0;
       border-bottom: none; }
@@ -1409,6 +1426,13 @@ footer {
         .navbar ul.nav li.dropdown.inloggen ul.dropdown-menu h3 {
           margin-top: 0;
           margin-bottom: 10px; }
+    .navbar ul.nav li.my-account ul.dropdown-menu {
+      margin-top: -20px;
+      border: none; }
+      .navbar ul.nav li.my-account ul.dropdown-menu:before {
+        display: none; }
+      .navbar ul.nav li.my-account ul.dropdown-menu li:last-child {
+        border-bottom: none; }
   header .top-header {
     text-align: center;
     padding-top: 7px;
@@ -1432,6 +1456,34 @@ footer {
         line-height: 39px; }
     header .top-header a.scroll {
       display: none; }
+  header .top-header-over {
+    padding-bottom: 56px; }
+    header .top-header-over h1 {
+      font-size: 24px;
+      margin-top: 1px;
+      margin-bottom: 25px; }
+    header .top-header-over h2 {
+      font-size: 16px; }
+    header .top-header-over a.zoken {
+      margin-top: 15px;
+      line-height: 39px;
+      padding-right: 68px;
+      height: 39px;
+      padding-left: 15px;
+      font-size: 13px; }
+      header .top-header-over a.zoken:after {
+        height: 39px;
+        line-height: 39px;
+        width: 39px; }
+  .select {
+    margin-right: 0;
+    margin-left: 0;
+    margin: 0 11px;
+    margin-bottom: 12px;
+    width: 91%;
+    max-width: 100%; }
+    .select select {
+      padding: 8px 13px; }
   main .profile-block .top-items {
     margin-bottom: 13px;
     padding: 0 11px;
@@ -1471,10 +1523,13 @@ footer {
         padding-right: 17px; }
         main .profile-block .right-block .profile-tabs .tabs-item h3 .fa {
           line-height: 32px; }
-      main .profile-block .right-block .profile-tabs .tabs-item .tabs-detail p {
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 24px; }
+      main .profile-block .right-block .profile-tabs .tabs-item .tabs-detail {
+        padding-left: 12px;
+        padding-right: 15px; }
+        main .profile-block .right-block .profile-tabs .tabs-item .tabs-detail p {
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 24px; }
   main .profile-block .right-block .user-name {
     font-size: 24px;
     margin-top: 0;
@@ -1521,6 +1576,7 @@ footer {
       height: auto;
       display: block;
       width: 100%;
+      border: none;
       border-bottom: 1px solid #eaeaea; }
       main .profile-block .right-block .profile-buttons ul li a {
         padding: 0;
@@ -1531,6 +1587,8 @@ footer {
         main .profile-block .right-block .profile-buttons ul li a div.text {
           font-size: 13px;
           line-height: 18px; }
+      main .profile-block .right-block .profile-buttons ul li:last-child {
+        border-bottom: none; }
     main .profile-block .right-block .profile-buttons ul li.chat a {
       padding: 0; }
     main .profile-block .right-block .profile-buttons ul li.inter a {
@@ -1637,6 +1695,14 @@ footer {
         line-height: 23px;
         width: 19px;
         font-size: 10px; }
+  main .dates-block-over.dates-block {
+    padding-bottom: 0px; }
+    main .dates-block-over.dates-block h2 {
+      font-size: 16px;
+      line-height: 20px;
+      padding: 0 10px;
+      margin-top: 15px;
+      margin-bottom: 20px; }
   main .reference-block {
     padding-top: 30px;
     padding-bottom: 44px; }
@@ -1698,7 +1764,8 @@ footer {
         line-height: 38px; }
   footer .bottom-footer {
     padding: 0;
-    padding-top: 18px; }
+    padding-top: 18px;
+    padding-bottom: 18px; }
     footer .bottom-footer span {
       font-size: 10px;
       font-weight: 400;
@@ -1778,6 +1845,107 @@ text-left-not-xs,
     text-align: right; }
   .text-justify-md {
     text-align: justify; } }
+
+@media (min-width: 768px) and (max-width: 1400px) {
+  .navbar-right {
+    margin-right: 0; } }
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .navbar-right {
+    margin-right: 0; }
+  .navbar .navbar-brand {
+    padding: 18px 10px;
+    padding-top: 31px;
+    padding-bottom: 35px;
+    float: left; }
+    .navbar .navbar-brand img {
+      max-width: 158px; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  body {
+    padding-top: 58px; }
+  .navbar-header {
+    float: none; }
+  .navbar-left, .navbar-right {
+    float: none !important; }
+  .navbar-toggle {
+    display: block;
+    float: left; }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px; }
+  .navbar-collapse.collapse {
+    display: none !important; }
+  .navbar-nav {
+    float: none !important; }
+  .navbar-nav > li {
+    float: none; }
+  .dropdown-menu {
+    position: static; }
+  .collapse.in {
+    display: block !important;
+    min-height: 470px; }
+  .navbar .navbar-toggle {
+    margin: 0;
+    padding: 0;
+    border: none;
+    float: left;
+    margin: 27px 34px 25px 27px; }
+    .navbar .navbar-toggle .icon-bar {
+      color: black;
+      background-color: black;
+      width: 20px;
+      height: 4px; }
+  .navbar .navbar-brand {
+    float: left;
+    padding: 18px 10px;
+    padding-left: 16px; }
+    .navbar .navbar-brand img {
+      max-width: 158px; }
+  .navbar ul.nav {
+    margin-top: 0;
+    margin-bottom: 0; }
+    .navbar ul.nav li {
+      padding: 0;
+      border-bottom: 1px solid #eaeaea; }
+      .navbar ul.nav li a {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 66px;
+        padding-left: 26px; }
+    .navbar ul.nav li.sub {
+      padding-left: 0; }
+    .navbar ul.nav li.dropdown.inloggen.open > a {
+      background-color: #fff; }
+    .navbar ul.nav li.dropdown.inloggen {
+      padding-bottom: 0;
+      border-bottom: none; }
+      .navbar ul.nav li.dropdown.inloggen > a {
+        margin-top: 0;
+        background-color: #fff;
+        border: none;
+        color: #000000;
+        padding-top: 0;
+        padding-left: 26px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 67px;
+        padding-right: 0; }
+        .navbar ul.nav li.dropdown.inloggen > a:hover {
+          background-color: white; }
+      .navbar ul.nav li.dropdown.inloggen ul.dropdown-menu {
+        width: 470px; }
+        .navbar ul.nav li.dropdown.inloggen ul.dropdown-menu h3 {
+          margin-top: 0;
+          margin-bottom: 10px; }
+    .navbar ul.nav li.my-account ul.dropdown-menu {
+      margin-top: 0px;
+      width: 100%;
+      border: none; }
+      .navbar ul.nav li.my-account ul.dropdown-menu:before {
+        display: none; }
+      .navbar ul.nav li.my-account ul.dropdown-menu li:last-child {
+        border-bottom: none; } }
 
 @media (min-width: 1200px) {
   .text-left-not-lg,
