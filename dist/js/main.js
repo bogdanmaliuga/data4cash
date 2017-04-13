@@ -5,17 +5,45 @@ jQuery(document).ready(function($) {
         }, 2000);
     });
 
+    $('.navbar-toggle').click(function(event) {
+
+        if ($(this).hasClass('collapsed')) {
+            $(this).addClass('menu-show');
+
+
+        } else {
+            $(this).removeClass('menu-show');
+
+
+        }
+    });
+    $('.tabs-item>h3').click(function(event) {
+
+        $(this).next().slideToggle(function(argument) {
+
+            if ($(this).parent().children('h3').children('.fa').hasClass('fa-angle-down')) {
+                $(this).parent().children('h3').children('.fa').removeClass('fa-angle-down');
+                $(this).parent().children('h3').children('.fa').addClass('fa-angle-up');
+            } else if ($(this).parent().children('h3').children('.fa').hasClass('fa-angle-up')) {
+                $(this).parent().children('h3').children('.fa').removeClass('fa-angle-up');
+                $(this).parent().children('h3').children('.fa').addClass('fa-angle-down');
+            }
+
+        });
+
+
+    });
     var owl = $('#owl1');
     owl.owlCarousel({
         loop: true,
         margin: 33,
-        mouseDrag:false,
+        mouseDrag: false,
         responsive: {
             0: {
                 items: 1,
                 pagination: false,
-                margin: 12,
-                stagePadding: 25
+                margin: 27,
+                stagePadding: 54
             },
             540: {
                 items: 2,
@@ -36,6 +64,7 @@ jQuery(document).ready(function($) {
     owl2.owlCarousel({
         loop: true,
         margin: 33,
+        mouseDrag: false,
         responsive: {
             0: {
                 items: 1,
@@ -62,6 +91,7 @@ jQuery(document).ready(function($) {
     owl3.owlCarousel({
         loop: true,
         margin: 33,
+        mouseDrag: false,
         responsive: {
             0: {
                 items: 1,
@@ -88,6 +118,7 @@ jQuery(document).ready(function($) {
     owl4.owlCarousel({
         loop: true,
         margin: 33,
+        mouseDrag: false,
         responsive: {
             0: {
                 items: 1,
@@ -104,6 +135,31 @@ jQuery(document).ready(function($) {
             },
             1000: {
                 items: 4
+            }
+
+
+
+        }
+    })
+
+    var owlRef = $('#owl-ref');
+    owlRef.owlCarousel({
+        loop: true,
+        margin: 33,
+        mouseDrag: false,
+        responsive: {
+            0: {
+                items: 1,
+                pagination: false,
+                margin: 17,
+                stagePadding: 54
+            },
+            540: {
+                items: 2,
+                pagination: false
+            },
+            768: {
+                items: 3
             }
 
 
