@@ -34,10 +34,20 @@ jQuery(document).ready(function($) {
 
     });
     $('.clickToOver').click(function(event) {
-        
-         $('html, body').animate({
-        scrollTop: $(".profile-tabs").offset().top-$('.navbar').height()-5
-    }, 2000)
+
+        $('html, body').animate({
+            scrollTop: $(".profile-tabs").offset().top - $('.navbar').height() - 5
+        }, 2000);
+
+        $('.tabs-item>h3').each(function(i, obj) {
+
+
+            if (i == 0) {
+                $(this).click();
+            }
+
+        })
+
     });
     var owl = $('#owl1');
     owl.owlCarousel({
@@ -55,8 +65,15 @@ jQuery(document).ready(function($) {
                 items: 2,
                 pagination: false
             },
+            667:{
+                items:3,
+                pagination:false
+            },
             768: {
-                items: 3
+                items:2
+            },
+            1024:{
+                items:3
             },
             1000: {
                 items: 4
@@ -73,7 +90,7 @@ jQuery(document).ready(function($) {
         mouseDrag: false,
         responsive: {
             0: {
-               items: 1,
+                items: 1,
                 pagination: false,
                 margin: 27,
                 stagePadding: 54
@@ -82,8 +99,15 @@ jQuery(document).ready(function($) {
                 items: 2,
                 pagination: false
             },
+            667:{
+                items:3,
+                pagination:false
+            },
             768: {
-                items: 3
+                items: 2
+            },
+            1024:{
+                items:3
             },
             1000: {
                 items: 4
@@ -109,8 +133,15 @@ jQuery(document).ready(function($) {
                 items: 2,
                 pagination: false
             },
+            667:{
+                items:3,
+                pagination:false
+            },
             768: {
-                items: 3
+                items: 2
+            },
+            1024:{
+                items:3
             },
             1000: {
                 items: 4
@@ -127,7 +158,7 @@ jQuery(document).ready(function($) {
         mouseDrag: false,
         responsive: {
             0: {
-               items: 1,
+                items: 1,
                 pagination: false,
                 margin: 27,
                 stagePadding: 54
@@ -136,8 +167,15 @@ jQuery(document).ready(function($) {
                 items: 2,
                 pagination: false
             },
+            667:{
+                items:3,
+                pagination:false
+            },
             768: {
-                items: 3
+                items: 2
+            },
+            1024:{
+                items:3
             },
             1000: {
                 items: 4
@@ -165,8 +203,12 @@ jQuery(document).ready(function($) {
                 pagination: false
             },
             768: {
-                items: 3
+                items: 2
+            },
+            1300:{
+                items:3
             }
+
 
 
 

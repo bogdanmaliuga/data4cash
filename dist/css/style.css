@@ -1146,7 +1146,9 @@ main .dates-block {
       width: 100%;
       -webkit-transition: -webkit-transform 0.5s ease;
       -moz-transition: -moz-transform 0.5s ease;
-      transition: transform 0.5s ease; }
+      transition: transform 0.5s ease;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px; }
       main .dates-block .owl-carousel .date-item img:hover {
         -webkit-transform: scale(1.2);
         -moz-transform: scale(1.2);
@@ -1154,7 +1156,9 @@ main .dates-block {
         transform: scale(1.2);
         -webkit-transition: -webkit-transform 0.5s ease;
         -moz-transition: -moz-transform 0.5s ease;
-        transition: transform 0.5s ease; }
+        transition: transform 0.5s ease;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px; }
     main .dates-block .owl-carousel .date-item h3 {
       font-size: 21px;
       color: #242424;
@@ -1666,8 +1670,6 @@ footer {
       margin-top: 16px;
       margin-bottom: 22px; }
     main .dates-block .slider-block {
-      padding-left: 0;
-      padding-right: 0;
       margin-bottom: 18px; }
     main .dates-block .slider-block.last-slider {
       display: none; }
@@ -1714,9 +1716,6 @@ footer {
       line-height: 20px;
       padding: 0 24px;
       margin-bottom: 23px; }
-    main .reference-block .reference-carousel {
-      padding-left: 0;
-      padding-right: 0; }
     main .reference-block .reference-item {
       margin-bottom: 17px;
       padding: 0;
@@ -1866,7 +1865,8 @@ text-left-not-xs,
     padding-top: 58px; }
   .navbar-header {
     float: none; }
-  .navbar-left, .navbar-right {
+  .navbar-left,
+  .navbar-right {
     float: none !important; }
   .navbar-toggle {
     display: block;
@@ -1884,7 +1884,7 @@ text-left-not-xs,
     position: static; }
   .collapse.in {
     display: block !important;
-    min-height: 470px; }
+    max-height: 100%; }
   .navbar .navbar-toggle {
     margin: 0;
     padding: 0;
@@ -1933,11 +1933,9 @@ text-left-not-xs,
         padding-right: 0; }
         .navbar ul.nav li.dropdown.inloggen > a:hover {
           background-color: white; }
-      .navbar ul.nav li.dropdown.inloggen ul.dropdown-menu {
-        width: 470px; }
-        .navbar ul.nav li.dropdown.inloggen ul.dropdown-menu h3 {
-          margin-top: 0;
-          margin-bottom: 10px; }
+      .navbar ul.nav li.dropdown.inloggen ul.dropdown-menu h3 {
+        margin-top: 0;
+        margin-bottom: 10px; }
     .navbar ul.nav li.my-account ul.dropdown-menu {
       margin-top: 0px;
       width: 100%;
@@ -1961,3 +1959,104 @@ text-left-not-xs,
     text-align: right; }
   .text-justify-lg {
     text-align: justify; } }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  footer .bottom-footer span {
+    font-size: 9px; }
+  footer .bottom-footer a {
+    font-size: 9px; } }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .select {
+    width: 218px; }
+  .navbar ul.nav li {
+    padding-left: 25px; }
+    .navbar ul.nav li a {
+      font-size: 16px; }
+  header .top-header {
+    padding-top: 20px;
+    padding-bottom: 70px; }
+    header .top-header .inner-header h1 {
+      font-size: 30px; }
+    header .top-header .inner-header a {
+      height: 39px;
+      line-height: 39px;
+      font-size: 14px;
+      padding-right: 60px; }
+      header .top-header .inner-header a:after {
+        height: 39px;
+        line-height: 39px;
+        width: 39px; }
+  main .profile-block .right-block .user-name {
+    font-size: 30px;
+    margin-top: 0; }
+  main .profile-block .right-block .user-descr {
+    width: 70.5%; }
+    main .profile-block .right-block .user-descr p {
+      font-size: 18px;
+      line-height: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 6;
+      line-height: 26px;
+      max-height: 156px; }
+  main .profile-block .right-block .user-detail {
+    display: block;
+    width: 100%;
+    margin-top: 20px; }
+  main .profile-block .right-block .profile-buttons ul li a {
+    padding: 11px 15.24px !important; }
+  main .profile-block .right-block .profile-buttons ul li.inter a {
+    padding-left: 0;
+    padding-right: 0; }
+  main .profile-block .right-block .profile-buttons ul li.chat a {
+    padding-left: 0;
+    padding-right: 0; }
+  main .profile-block .left-block {
+    margin-top: 20px;
+    margin-left: 7.5px; }
+  main .top-block h1 {
+    font-size: 30px; }
+  main .top-block h2 {
+    font-size: 20px; }
+  main .top-block p {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0 40px; }
+  main .top-block a {
+    height: 39px;
+    line-height: 39px;
+    font-size: 14px;
+    padding-right: 60px; }
+    main .top-block a:after {
+      height: 39px;
+      line-height: 39px;
+      width: 39px; }
+  main .second-block h1 {
+    font-size: 30px; }
+  main .second-block h2 {
+    font-size: 20px; }
+  main .second-block p {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0 40px; }
+  main .second-block a {
+    height: 39px;
+    line-height: 39px;
+    font-size: 14px;
+    padding-right: 60px; }
+    main .second-block a:after {
+      height: 39px;
+      line-height: 39px;
+      width: 39px; }
+  main .dates-block h1 {
+    font-size: 30px; }
+  main .dates-block h2 {
+    font-size: 20px; }
+  main .reference-block h1 {
+    font-size: 30px; }
+  main .reference-block h2 {
+    font-size: 20px; } }
