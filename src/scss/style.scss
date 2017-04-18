@@ -1797,6 +1797,9 @@ footer {
                     }
                 }
             }
+            video{
+                top: 80%;
+            }
             a.scroll {
                 display: none;
             }
@@ -1860,11 +1863,11 @@ footer {
             }
             .full-height {
                 margin-bottom: 27px;
-                .col-sm-3 {
+                .col-lg-3 {
                     margin-bottom: 0;
                     padding-bottom: 0;
                 }
-                .col-sm-9 {
+                .col-lg-9 {
                     padding: 0 27px !important;
                 }
             }
@@ -2087,8 +2090,11 @@ footer {
                 margin-bottom: 22px;
             }
             .slider-block {
-                // padding-left: 0;
-                // padding-right: 0;
+                @media (max-width: 567px) {
+                   padding-left: 0;
+                padding-right: 0; 
+                }
+                
                 margin-bottom: 18px;
             }
             .slider-block.last-slider {
@@ -2154,8 +2160,10 @@ footer {
                 margin-bottom: 23px;
             }
             .reference-carousel {
-                // padding-left: 0;
-                // padding-right: 0;
+                @media (max-width: 567px) {
+                   padding-left: 0;
+                padding-right: 0; 
+                }
             }
             .reference-item {
                 margin-bottom: 17px;
@@ -2352,7 +2360,7 @@ text-left-not-xs,
 
 @media (min-width: 768px) and (max-width: 992px) {
     body {
-        padding-top: 58px
+        padding-top: 78px
     }
     .navbar-header {
         float: none;
@@ -2367,7 +2375,7 @@ text-left-not-xs,
     }
     .navbar-fixed-top {
         top: 0;
-        border-width: 0 0 1px;
+        // border-width: 0 0 1px;
     }
     .navbar-collapse.collapse {
         display: none!important;
@@ -2509,6 +2517,13 @@ text-left-not-xs,
             }
         }
     }
+    header{
+        .top-header{
+            video{
+                top:80%;
+            }
+        }
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -2523,6 +2538,12 @@ text-left-not-xs,
                     font-size: 16px;
                 }
             }
+            li.my-account{
+                ul.dropdown-menu{
+                    left: 14px;
+                }
+
+            }
 
         }
     }
@@ -2530,6 +2551,9 @@ text-left-not-xs,
         .top-header {
             padding-top: 20px;
             padding-bottom: 70px;
+            video{
+                top:80%;
+            }
             .inner-header {
                 h1 {
                     font-size: 30px;

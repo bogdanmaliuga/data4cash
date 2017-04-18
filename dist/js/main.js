@@ -75,9 +75,10 @@ jQuery(document).ready(function($) {
             1024:{
                 items:3
             },
-            1000: {
-                items: 4
+            1300:{
+                items:4
             }
+
 
 
 
@@ -109,10 +110,9 @@ jQuery(document).ready(function($) {
             1024:{
                 items:3
             },
-            1000: {
-                items: 4
+            1300:{
+                items:4
             }
-
 
 
         }
@@ -143,8 +143,8 @@ jQuery(document).ready(function($) {
             1024:{
                 items:3
             },
-            1000: {
-                items: 4
+            1300:{
+                items:4
             }
 
 
@@ -177,8 +177,8 @@ jQuery(document).ready(function($) {
             1024:{
                 items:3
             },
-            1000: {
-                items: 4
+            1300:{
+                items:4
             }
 
 
@@ -208,7 +208,6 @@ jQuery(document).ready(function($) {
             1300:{
                 items:3
             }
-
 
 
 
