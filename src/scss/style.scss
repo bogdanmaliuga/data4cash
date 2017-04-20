@@ -22,6 +22,12 @@ $line-height) {
     line-height: $line-height;
     max-height: $line-height * $lines;
 }
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
 
 .owl-dots {
     display: none;
@@ -586,8 +592,9 @@ main {
             background-color: #ffffff;
             padding: 0 30px;
             padding-right: 25px;
-            margin-bottom: -99999px;
-            padding-bottom: 99999px;
+            height: 100%;
+            // margin-bottom: -99999px;
+            // padding-bottom: 99999px;
             h3 {
                 color: #9b9b9b;
                 font-size: 18px;
@@ -669,7 +676,7 @@ main {
                         background-color: #4aaa49;
                     }
                     &:hover {
-                        box-shadow: inset -150px 0 0 0 #4aaa49;
+                        box-shadow: inset -250px 0 0 0 #4aaa49;
                         text-decoration: none;
                         -webkit-transition: ease-out 0.6s;
                         -moz-transition: ease-out 0.6s;
@@ -1690,7 +1697,7 @@ footer {
             padding: 0;
             border: none;
             float: left;
-            margin: 27px 34px 25px 27px;
+            margin: 27px 34px 25px 15px;
             .icon-bar {
                 color: black;
                 background-color: black;
@@ -1845,6 +1852,7 @@ footer {
             .top-items {
                 margin-bottom: 13px;
                 padding: 0 11px;
+                padding:0;
                 margin-top: 6px;
                 a {
                     font-size: 13px;
@@ -1868,7 +1876,7 @@ footer {
                     padding-bottom: 0;
                 }
                 .col-lg-9 {
-                    padding: 0 27px !important;
+                    padding: 0 15px !important;
                 }
             }
             .right-block {
@@ -2334,7 +2342,11 @@ text-left-not-xs,
         text-align: justify;
     }
 }
-
+@media(max-width: 1999px){
+    .row-eq-height{
+        display: block;
+    }
+}
 @media (min-width: 768px) and (max-width: 1400px) {
     .navbar-right {
         margin-right: 0;
@@ -2404,7 +2416,7 @@ text-left-not-xs,
             padding: 0;
             border: none;
             float: left;
-            margin: 27px 34px 25px 27px;
+            margin: 27px 34px 25px 0px;
             .icon-bar {
                 color: black;
                 background-color: black;
@@ -2480,6 +2492,13 @@ text-left-not-xs,
                         }
                     }
                 }
+            }
+        }
+    }
+    main{
+        .profile-block{
+            .top-items{
+                padding:0 15px;
             }
         }
     }
