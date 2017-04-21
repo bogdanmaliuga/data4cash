@@ -73,7 +73,7 @@ body {
 .select select:disabled ~ .select__arrow {
   border-top-color: #ccc; }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .padding-null {
     padding-left: 0 !important;
     padding-right: 0 !important; }
@@ -624,7 +624,8 @@ main .profile-block {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    background-image: url(../img/profile-over.png); }
+    background-image: url(../img/profile-over.png);
+    border-radius: 8px; }
     main .profile-block .right-block .user-info .user-img img {
       max-width: 100%; }
   main .profile-block .right-block .user-descr {
@@ -1966,9 +1967,7 @@ text-left-not-xs,
       .navbar ul.nav li.my-account ul.dropdown-menu:before {
         display: none; }
       .navbar ul.nav li.my-account ul.dropdown-menu li:last-child {
-        border-bottom: none; }
-  main .profile-block .top-items {
-    padding: 0 15px; } }
+        border-bottom: none; } }
 
 @media (min-width: 1200px) {
   .text-left-not-lg,
@@ -1991,17 +1990,29 @@ text-left-not-xs,
   footer .bottom-footer a {
     font-size: 9px; }
   header .top-header video {
-    top: 80%; } }
+    top: 80%; }
+  table {
+    width: calc(100% - 15px); }
+  main .profile-block .right-block .profile-tabs .tabs-item img {
+    max-width: 166.5px; } }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .select {
     width: 218px; }
+  table {
+    width: calc(100% - 30px); }
+  main .profile-block .right-block .left-block-inside {
+    display: block; }
+  main .profile-block .left-block {
+    display: none; }
   .navbar ul.nav li {
     padding-left: 25px; }
     .navbar ul.nav li a {
       font-size: 16px; }
   .navbar ul.nav li.my-account ul.dropdown-menu {
     left: 14px; }
+  .padding-right-null {
+    padding-left: 0 !important; }
   header .top-header {
     padding-top: 20px;
     padding-bottom: 70px; }
@@ -2091,3 +2102,13 @@ text-left-not-xs,
     font-size: 30px; }
   main .reference-block h2 {
     font-size: 20px; } }
+
+@media (max-width: 375px) {
+  table {
+    width: calc(100% - 30px); }
+  main .profile-block .right-block .profile-tabs .tabs-item img {
+    max-width: 100%; } }
+
+@media (max-width: 667px) {
+  table {
+    width: calc(100% - 30px); } }
