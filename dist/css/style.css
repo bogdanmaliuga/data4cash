@@ -934,10 +934,11 @@ main .profile-block {
       main .profile-block .right-block .profile-tabs .tabs-item a.photo-item {
         display: inline-block;
         float: left;
-        width: 19.5%;
-        margin-left: 0.25%;
-        margin-right: 0.25%;
-        margin-bottom: 20px; }
+        width: calc(25.83% - 30px);
+        margin-left: 30px;
+        margin-bottom: 30px; }
+        main .profile-block .right-block .profile-tabs .tabs-item a.photo-item:nth-child(4n+1) {
+          margin-left: 0; }
       main .profile-block .right-block .profile-tabs .tabs-item img {
         width: 100%;
         border-radius: 8px;
@@ -1544,12 +1545,12 @@ footer {
         font-size: 13px;
         font-weight: 700;
         line-height: 32px;
-        padding-left: 12px;
-        padding-right: 17px; }
+        padding-left: 15px;
+        padding-right: 15px; }
         main .profile-block .right-block .profile-tabs .tabs-item h3 .fa {
           line-height: 32px; }
       main .profile-block .right-block .profile-tabs .tabs-item .tabs-detail {
-        padding-left: 12px;
+        padding-left: 15px;
         padding-right: 15px; }
         main .profile-block .right-block .profile-tabs .tabs-item .tabs-detail p {
           font-size: 13px;
@@ -2005,7 +2006,9 @@ text-left-not-xs,
   table {
     width: calc(100% - 15px); }
   main .profile-block .right-block .profile-tabs .tabs-item a.photo-item {
-    width: 24.5%; } }
+    width: calc(25.546% - 15px);
+    margin-left: 15px;
+    margin-bottom: 15px; } }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .select {
@@ -2125,6 +2128,12 @@ text-left-not-xs,
 @media (max-width: 667px) {
   table {
     width: calc(100% - 30px); } }
+
+@media (min-width: 376px) and (max-width: 667px) {
+  main .profile-block .right-block .profile-tabs .tabs-item a.photo-item {
+    width: calc(25.546% - 15px);
+    margin-left: 15px;
+    margin-bottom: 15px; } }
 
 @media (min-width: 769px) and (max-width: 992px) {
   .navbar ul.nav li.sub {

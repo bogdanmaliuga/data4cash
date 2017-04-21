@@ -1159,10 +1159,13 @@ main {
                     a.photo-item {
                         display: inline-block;
                         float: left;
-                        width: 19.5%;
-                        margin-left: 0.25%;
-                        margin-right: 0.25%;
-                        margin-bottom: 20px;
+                        width: calc(25.83% - 30px);
+                        margin-left: 30px;
+                        // margin-right: 0.25%;
+                        margin-bottom: 30px;
+                        &:nth-child(4n+1){
+                            margin-left: 0;
+                        }
                        
                     }
                     img {
@@ -1916,14 +1919,14 @@ footer {
                             font-size: 13px;
                             font-weight: 700;
                             line-height: 32px;
-                            padding-left: 12px;
-                            padding-right: 17px;
+                            padding-left: 15px;
+                            padding-right: 15px;
                             .fa {
                                 line-height: 32px;
                             }
                         }
                         .tabs-detail {
-                            padding-left: 12px;
+                            padding-left: 15px;
                             padding-right: 15px;
                             p {
                                 font-size: 13px;
@@ -2575,7 +2578,10 @@ text-left-not-xs,
                 .profile-tabs {
                     .tabs-item {
                         a.photo-item {
-                            width: 24.5%;
+                            // width: 24.5%;
+                            width:calc(25.546% - 15px);
+                            margin-left: 15px;
+                            margin-bottom: 15px;
                             
                         }
                     }
@@ -2787,6 +2793,26 @@ text-left-not-xs,
 @media (max-width: 667px) {
     table {
         width: calc(100% - 30px);
+    }
+
+}
+@media(min-width: 376px) and(max-width: 667px){
+     main {
+        .profile-block {
+            .right-block {
+                .profile-tabs {
+                    .tabs-item {
+                        a.photo-item {
+                            // width: 24.5%;
+                            width:calc(25.546% - 15px);
+                            margin-left: 15px;
+                            margin-bottom: 15px;
+                            
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
