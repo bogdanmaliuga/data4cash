@@ -1,4 +1,5 @@
 jQuery(document).ready(function($) {
+    $(".navbar-collapse").css({ maxHeight: $(window).height() - $(".navbar-header").height() + "px" });
     $(".scroll").click(function() {
         $('html, body').animate({
             scrollTop: $("#scrollTo").offset().top - $(".navbar-fixed-top").height()

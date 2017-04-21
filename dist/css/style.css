@@ -625,7 +625,8 @@ main .profile-block {
     -moz-background-size: cover;
     background-size: cover;
     background-image: url(../img/profile-over.png);
-    border-radius: 8px; }
+    border-radius: 8px;
+    overflow: hidden; }
     main .profile-block .right-block .user-info .user-img img {
       max-width: 100%; }
   main .profile-block .right-block .user-descr {
@@ -915,6 +916,7 @@ main .profile-block {
   main .profile-block .right-block .profile-tabs {
     margin-top: 30px; }
     main .profile-block .right-block .profile-tabs .tabs-item {
+      overflow: hidden;
       border-radius: 8px;
       border: 1px solid #eaeaea;
       background-color: #ffffff;
@@ -929,9 +931,18 @@ main .profile-block {
         margin: 0; }
         main .profile-block .right-block .profile-tabs .tabs-item h3 .fa {
           line-height: 75px; }
-      main .profile-block .right-block .profile-tabs .tabs-item img {
-        max-width: 200px;
+      main .profile-block .right-block .profile-tabs .tabs-item a.photo-item {
+        display: inline-block;
+        float: left;
+        width: 19.76%;
+        margin-left: 0.3%;
         margin-bottom: 20px; }
+        main .profile-block .right-block .profile-tabs .tabs-item a.photo-item:first-child {
+          margin-left: 0; }
+      main .profile-block .right-block .profile-tabs .tabs-item img {
+        width: 100%;
+        border-radius: 8px;
+        overflow: hidden; }
       main .profile-block .right-block .profile-tabs .tabs-item .tabs-detail {
         display: none;
         padding-left: 30px;
@@ -1147,7 +1158,11 @@ main .dates-block {
     background-color: #ffffff;
     overflow: hidden; }
     main .dates-block .owl-carousel .date-item .img-container {
-      overflow: hidden; }
+      overflow: hidden;
+      z-index: 1;
+      position: relative;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px; }
     main .dates-block .owl-carousel .date-item img {
       width: 100%;
       -webkit-transition: -webkit-transform 0.5s ease;
@@ -1162,9 +1177,7 @@ main .dates-block {
         transform: scale(1.2);
         -webkit-transition: -webkit-transform 0.5s ease;
         -moz-transition: -moz-transform 0.5s ease;
-        transition: transform 0.5s ease;
-        border-top-right-radius: 8px;
-        border-top-left-radius: 8px; }
+        transition: transform 0.5s ease; }
     main .dates-block .owl-carousel .date-item h3 {
       font-size: 21px;
       color: #242424;
@@ -1897,7 +1910,9 @@ text-left-not-xs,
     display: block;
     float: left; }
   .navbar-fixed-top {
-    top: 0; }
+    top: 0;
+    overflow-y: scroll;
+    max-height: 767px; }
   .navbar-collapse.collapse {
     display: none !important; }
   .navbar-nav {
@@ -1907,8 +1922,7 @@ text-left-not-xs,
   .dropdown-menu {
     position: static; }
   .collapse.in {
-    display: block !important;
-    max-height: 100%; }
+    display: block !important; }
   .navbar .navbar-toggle {
     margin: 0;
     padding: 0;
@@ -1937,8 +1951,6 @@ text-left-not-xs,
         font-weight: 400;
         line-height: 66px;
         padding-left: 26px; }
-    .navbar ul.nav li.sub {
-      padding-left: 0; }
     .navbar ul.nav li.dropdown.inloggen.open > a {
       background-color: #fff; }
     .navbar ul.nav li.dropdown.inloggen {
@@ -1993,8 +2005,8 @@ text-left-not-xs,
     top: 80%; }
   table {
     width: calc(100% - 15px); }
-  main .profile-block .right-block .profile-tabs .tabs-item img {
-    max-width: 166.5px; } }
+  main .profile-block .right-block .profile-tabs .tabs-item a.photo-item {
+    width: 24.7%; } }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .select {
@@ -2106,9 +2118,14 @@ text-left-not-xs,
 @media (max-width: 375px) {
   table {
     width: calc(100% - 30px); }
-  main .profile-block .right-block .profile-tabs .tabs-item img {
-    max-width: 100%; } }
+  main .profile-block .right-block .profile-tabs .tabs-item a.photo-item {
+    width: 100%;
+    margin-left: 0; } }
 
 @media (max-width: 667px) {
   table {
     width: calc(100% - 30px); } }
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .navbar ul.nav li.sub {
+    padding-left: 25px; } }
