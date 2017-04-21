@@ -934,11 +934,10 @@ main .profile-block {
       main .profile-block .right-block .profile-tabs .tabs-item a.photo-item {
         display: inline-block;
         float: left;
-        width: 19.76%;
-        margin-left: 0.3%;
+        width: 19.5%;
+        margin-left: 0.25%;
+        margin-right: 0.25%;
         margin-bottom: 20px; }
-        main .profile-block .right-block .profile-tabs .tabs-item a.photo-item:first-child {
-          margin-left: 0; }
       main .profile-block .right-block .profile-tabs .tabs-item img {
         width: 100%;
         border-radius: 8px;
@@ -2006,7 +2005,7 @@ text-left-not-xs,
   table {
     width: calc(100% - 15px); }
   main .profile-block .right-block .profile-tabs .tabs-item a.photo-item {
-    width: 24.7%; } }
+    width: 24.5%; } }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .select {
@@ -2120,7 +2119,8 @@ text-left-not-xs,
     width: calc(100% - 30px); }
   main .profile-block .right-block .profile-tabs .tabs-item a.photo-item {
     width: 100%;
-    margin-left: 0; } }
+    margin-left: 0;
+    margin-right: 0; } }
 
 @media (max-width: 667px) {
   table {

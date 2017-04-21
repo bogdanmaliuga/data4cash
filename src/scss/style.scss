@@ -1159,12 +1159,11 @@ main {
                     a.photo-item {
                         display: inline-block;
                         float: left;
-                        width: 19.76%;
-                        margin-left: 0.3%;
+                        width: 19.5%;
+                        margin-left: 0.25%;
+                        margin-right: 0.25%;
                         margin-bottom: 20px;
-                        &:first-child {
-                            margin-left: 0;
-                        }
+                       
                     }
                     img {
                         width: 100%;
@@ -2576,7 +2575,8 @@ text-left-not-xs,
                 .profile-tabs {
                     .tabs-item {
                         a.photo-item {
-                            width: 24.7%;
+                            width: 24.5%;
+                            
                         }
                     }
                 }
@@ -2775,6 +2775,7 @@ text-left-not-xs,
                         a.photo-item {
                             width: 100%;
                             margin-left: 0;
+                            margin-right: 0;
                         }
                     }
                 }
